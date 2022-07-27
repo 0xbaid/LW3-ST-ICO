@@ -17,10 +17,14 @@ async function main() {
     abi: JSON.parse(deployedCryptoDevsTokenContract.interface.format("json")),
   };
 
-  //This writes the ABI and address to the abi.json
-  fs.writeFile("../client/constants/abi.json", JSON.stringify(data), (err) => {
-    if (err) console.log(err);
-  });
+  //This writes the ABI and address to the CryptoDevToken.json
+  fs.writeFile(
+    "../client/constants/CryptoDevToken.json",
+    JSON.stringify(data),
+    (err) => {
+      if (err) console.log(err);
+    }
+  );
 }
 
 // We recommend this pattern to be able to use async/await everywhere
