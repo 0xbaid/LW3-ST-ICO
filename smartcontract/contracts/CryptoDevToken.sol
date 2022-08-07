@@ -65,4 +65,4 @@ contract CryptoDevToken is Ownable, ERC20 {
     fallback() external payable {}
 }
 
-// deployed: 0xf116E70ee1feeF29E2706A282bDCdf70Dc743f05
+// deployed: 0xe0c3Ba1B9d662eE59d5fEF1AA54C1C8d8BcA1e72
